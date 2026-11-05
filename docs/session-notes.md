@@ -38,6 +38,12 @@ Last session: 2026-10-29 (deploy-kit switch; before that 2026-10-27). Read this 
   `overrides` in `pnpm-workspace.yaml`; remove them once the plugin ships a
   patched `glob`. Note: in the cloud sandbox `turbo` fails with "Exec format
   error" (pnpm 12 binary); run the steps with `pnpm -r run ...` instead.
+- 2026-11-05: merged the Dependabot PRs #39, #41, #42, #44. Biome 2.6 (#44)
+  now formats Markdown too and adds `noComponentHookFactories`; the docs were
+  reformatted and a test component moved to module level. The `protect-main`
+  ruleset needs PR branches up to date with `main`, so merge them one at a
+  time (update branch, wait for checks, merge); lockfile conflicts are fixed
+  by taking `main`'s `pnpm-lock.yaml` and running `pnpm install`.
 - Brief copied to `docs/brief.md`; logo P1 (`brand/`); mockups (`design/mockups/`).
 - v0.1–v1.0 merged (PRs #1–#10): tokens; 39 components and 5 blocks in
   `pixelbits`; Storybook; docs site with generated API, shadcn registry
