@@ -19,12 +19,12 @@ See [`docs/brief.md`](docs/brief.md) and [`docs/decisions.md`](docs/decisions.md
 
 ## Packages
 
-| Package | Contents |
-| --- | --- |
+| Package           | Contents                                                      |
+| ----------------- | ------------------------------------------------------------- |
 | `packages/tokens` | CSS variables and the Tailwind v4 theme (dark/light, accents) |
-| `packages/ui` | Components (Radix primitives, cva variants, pixel effects) |
-| `apps/storybook` | Development, interaction tests, visual regression |
-| `apps/docs` | Docs site and shadcn registry |
+| `packages/ui`     | Components (Radix primitives, cva variants, pixel effects)    |
+| `apps/storybook`  | Development, interaction tests, visual regression             |
+| `apps/docs`       | Docs site and shadcn registry                                 |
 
 ## Development
 

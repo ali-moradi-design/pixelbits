@@ -156,25 +156,26 @@ describe("Popover and Tooltip", () => {
   });
 });
 
+function Menu({ onSettings }: { onSettings: () => void }) {
+  const [grid, setGrid] = useState(false);
+  return (
+    <DropdownMenu trigger={<Button>Account</Button>}>
+      <DropdownLabel>ali@studio</DropdownLabel>
+      <DropdownItem>Profile</DropdownItem>
+      <DropdownItem disabled>Billing</DropdownItem>
+      <DropdownItem shortcut="⌘ ," onSelect={onSettings}>
+        Settings
+      </DropdownItem>
+      <DropdownCheckboxItem checked={grid} onCheckedChange={setGrid}>
+        Show grid
+      </DropdownCheckboxItem>
+      <DropdownSeparator />
+      <DropdownItem variant="danger">Sign out</DropdownItem>
+    </DropdownMenu>
+  );
+}
+
 describe("DropdownMenu", () => {
-  function Menu({ onSettings }: { onSettings: () => void }) {
-    const [grid, setGrid] = useState(false);
-    return (
-      <DropdownMenu trigger={<Button>Account</Button>}>
-        <DropdownLabel>ali@studio</DropdownLabel>
-        <DropdownItem>Profile</DropdownItem>
-        <DropdownItem disabled>Billing</DropdownItem>
-        <DropdownItem shortcut="⌘ ," onSelect={onSettings}>
-          Settings
-        </DropdownItem>
-        <DropdownCheckboxItem checked={grid} onCheckedChange={setGrid}>
-          Show grid
-        </DropdownCheckboxItem>
-        <DropdownSeparator />
-        <DropdownItem variant="danger">Sign out</DropdownItem>
-      </DropdownMenu>
-    );
-  }
   it("opens on ArrowDown, skips disabled items, runs with Enter", async () => {
     const onSettings = vi.fn();
     render(<Menu onSettings={onSettings} />);

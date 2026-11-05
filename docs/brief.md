@@ -45,7 +45,7 @@ backticks, never start a line with an English word, repo files in English.
     first dissolve run like the later ones. Host sets `--px-fill` and `--px-ink`.
   - `RollLabel`: the label rolls up and a copy comes in from below.
   - Buttons: uppercase, letter spacing 0.06em, 2 px radius; primary uses the accent.
-  These are the starting point and the signature of the kit (the user's own code).
+    These are the starting point and the signature of the kit (the user's own code).
 
 ## Logo
 
