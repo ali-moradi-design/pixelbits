@@ -18,3 +18,10 @@ trustPolicy: no-downgrade
 # published without provenance; it is the safe 6.x version, not a hijack.
 trustPolicyExclude:
   - semver@6.3.1
+# Security fixes for transitive dependencies (remove once the parent package
+# depends on a patched version on its own):
+# - glob <14.0.2 (GHSA-3g3m-2fjr-6pw4) and minimatch <11.0.1
+#   (GHSA-g3hv-75wg-m249), both via @storybook/react-vite's docgen plugin.
+overrides:
+  glob@<14.0.2: ^14.0.3
+  minimatch@<11.0.1: ^11.0.3
