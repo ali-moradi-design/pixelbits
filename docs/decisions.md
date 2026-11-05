@@ -116,4 +116,3 @@ Decisions made after the brief (`brief.md`). Newer entries win.
   config with shared security headers; fonts self-hosted everywhere. The Tailwind
   CLI was replaced by the PostCSS plugin, removing the only (dev-only)
   vulnerable dependency.
-

@@ -58,13 +58,13 @@ TSDoc automatically.
 
 ## Scripts (`scripts/`)
 
-| Script | When | What it does |
-| --- | --- | --- |
-| `gen.ts` | before `dev`, `build`, `typecheck` | Rebuilds the kit first when its build is missing or older than its sources, runs the two below, and copies the built Storybook into `public/storybook/` and the brand files into `public/`. |
-| `api.ts` | from `gen.ts` | Reads `packages/ui/dist/**/*.d.ts` and writes `content/api.json`: every component's description, example and props (the props tables). |
-| `registry.ts` | from `gen.ts` | Generates the shadcn registry in `public/r/` (see below). |
-| `standalone.ts` | after `next build` | Copies `public/` and `.next/static/` into `.next/standalone/` so it runs on its own (the Docker build context). |
-| `check-csp.ts` | after `standalone.ts` | Starts the standalone server and fails if a sitemap page has no strict CSP or runs a script without the request's nonce. |
+| Script          | When                               | What it does                                                                                                                                                                                |
+| --------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `gen.ts`        | before `dev`, `build`, `typecheck` | Rebuilds the kit first when its build is missing or older than its sources, runs the two below, and copies the built Storybook into `public/storybook/` and the brand files into `public/`. |
+| `api.ts`        | from `gen.ts`                      | Reads `packages/ui/dist/**/*.d.ts` and writes `content/api.json`: every component's description, example and props (the props tables).                                                      |
+| `registry.ts`   | from `gen.ts`                      | Generates the shadcn registry in `public/r/` (see below).                                                                                                                                   |
+| `standalone.ts` | after `next build`                 | Copies `public/` and `.next/static/` into `.next/standalone/` so it runs on its own (the Docker build context).                                                                             |
+| `check-csp.ts`  | after `standalone.ts`              | Starts the standalone server and fails if a sitemap page has no strict CSP or runs a script without the request's nonce.                                                                    |
 
 The CSP itself is set per request with a nonce in `proxy.ts` (Next.js guide
 "Content Security Policy", section "Nonces"); the other headers (HSTS, cache,
