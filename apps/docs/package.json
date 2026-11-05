@@ -10,7 +10,7 @@
     "typecheck": "node scripts/gen.ts && tsc -p ."
   },
   "dependencies": {
-    "geist": "1.8.1",
+    "geist": "1.8.2",
     "hast-util-to-jsx-runtime": "2.3.6",
     "lenis": "1.3.27",
     "next": "16.4.3",
