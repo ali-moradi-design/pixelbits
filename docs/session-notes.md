@@ -33,6 +33,11 @@ Last session: 2026-10-29 (deploy-kit switch; before that 2026-10-27). Read this 
 
 ## Done
 
+- 2026-11-05: Security workflow (`pnpm audit`) went red on new advisories for
+  `glob`/`minimatch` (via `@storybook/react-vite`'s docgen plugin). Fixed with
+  `overrides` in `pnpm-workspace.yaml`; remove them once the plugin ships a
+  patched `glob`. Note: in the cloud sandbox `turbo` fails with "Exec format
+  error" (pnpm 12 binary); run the steps with `pnpm -r run ...` instead.
 - Brief copied to `docs/brief.md`; logo P1 (`brand/`); mockups (`design/mockups/`).
 - v0.1–v1.0 merged (PRs #1–#10): tokens; 39 components and 5 blocks in
   `pixelbits`; Storybook; docs site with generated API, shadcn registry
