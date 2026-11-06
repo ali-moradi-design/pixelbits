@@ -45,14 +45,14 @@ A calm React 19 UI kit whose pixel effects appear only at the moment of interact
 
 39 components, 5 blocks and the `Pixels` primitive they share, each with a live preview:
 
-| Group        | Components                                                                                                                    |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| Core         | Button, Icon button, Text link, Badge, Tag                                                                                     |
-| Forms        | Field, Input, Textarea, Checkbox, Radio group, Switch, Slider, Select, Combobox                                               |
-| Overlays     | Tabs, Accordion, Dialog and Sheet, Popover, Tooltip, Dropdown menu, Command palette, Toast                                    |
-| Data display | Card, Avatar, Skeleton, Table, Pagination, Breadcrumb, Progress                                                               |
+| Group        | Components                                                                                                                                               |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Core         | Button, Icon button, Text link, Badge, Tag                                                                                                               |
+| Forms        | Field, Input, Textarea, Checkbox, Radio group, Switch, Slider, Select, Combobox                                                                          |
+| Overlays     | Tabs, Accordion, Dialog and Sheet, Popover, Tooltip, Dropdown menu, Command palette, Toast                                                               |
+| Data display | Card, Avatar, Skeleton, Table, Pagination, Breadcrumb, Progress                                                                                          |
 | Signature    | Full-screen menu, Pixel image reveal, Text scramble, Pixel page transition, Pixel loader, Spotlight card, Magnetic, Number ticker, Marquee, Cursor trail |
-| Blocks       | Hero, Feature grid, Pricing, Site header, Site footer                                                                         |
+| Blocks       | Hero, Feature grid, Pricing, Site header, Site footer                                                                                                    |
 
 ## Quick start
 
